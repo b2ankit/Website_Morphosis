@@ -1,0 +1,436 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+/*css for header*/
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("../images/back3.gif");
+    height: 95vh; 
+    position: relative;
+    opacity: 0.95;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 0; 
+    z-index:10;
+}
+
+.row{
+    max-width: 1550px;
+    margin: 0 auto;
+}
+.clearfix:after{
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height:0px;
+    clear: both; 
+}
+.logo{
+    height: 110px;
+    width: auto;
+    float: left;
+    margin-top: -10px;
+}
+.main-nav{ 
+    float: right;
+    margin-top: 40px;
+}
+.main-nav li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 50px;
+
+}
+.main-nav li a{
+    padding: 5px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    font-weight: 100px;
+}
+.main-nav li a:hover{
+    border-bottom: 2px solid  #bf55ec;
+}
+
+.main-content-header{
+    width: 1300px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.main-content-header h1{
+    color: #fff;
+    font-size: 240%;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-family: 'Flamenco', cursive;
+    font-weight:bolder;
+}
+.colorchange{
+    animation: colorchanged 6s infinite;
+}
+@keyframes colorchanged{
+    0%{color:rgb(255, 0, 0);}
+    25%{color:#bf55ec;}
+    50%{color: rgb(0, 238, 255);}
+    100%{color:rgb(7, 134, 7);};
+}
+
+.mobile-icon{
+    display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+    .main-content-header{
+        width: 100%;
+        padding: 0 3%;
+        margin-left: 2%;
+    }
+    
+  }
+  @media only screen and (max-width: 998px) {
+    .main-content-header h1{
+        font-size: 200%;
+    }
+    
+  }
+  @media only screen and (max-width: 768px) {
+    .main-content-header h1{
+        font-size: 180%;
+    }
+    .main-nav{
+        display:none;
+    }
+    .mobile-icon{
+        display: block;
+        color: white;
+        float: right;
+        padding-top: 20px;
+        padding-right: 20px;
+    }
+    .main-nav{
+        float: left;
+        padding-top: 20px;
+        padding-left: 20%;
+    }
+    .main-nav li{
+        display: block;
+        margin-top: 10px;
+        margin-left: 0%;
+    }
+    .logo{
+        height: 100px;
+        width: auto;
+        float: left;
+        margin-top: -10px;
+        margin-left: 10px;
+    }
+    header{
+    background-size:cover;
+    background-color: rgb(15, 29, 34);
+    height: 120vh; 
+    }
+  }
+  @media only screen and (max-width: 450px){
+    .main-content-header h1{
+        font-size: 180%;
+        text-align:center;
+        font-weight: bold;
+    }
+
+    .main-content-header{
+       
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    body{
+        width:100%;
+        margin: 0px;
+        padding: 0px;
+    }
+    
+}
+/*Stricy css is started*/
+.sticky {
+    width: 100%;
+    height: 80px;
+    top: 0px;
+    background-color: rgba(18, 18, 19, 0.863);
+    position: fixed;
+    z-index:1;
+}
+
+#navbar{
+    overflow: hidden;
+}
+/*Css of about is started*/
+.about{
+    background: rgba(18, 18, 19, 0.863);
+    height: auto; 
+    margin:0px;
+    padding-bottom: 60px;
+}
+.about h3{
+    text-align:center;
+    color:#fff;
+    font-size:220%;
+    font-family: 'Flamenco', cursive;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-weight:bold;
+    padding-top: 80px;
+}
+
+.about p{
+    
+    font-size: 120%;
+    color: white;
+    padding-top: 50px;
+    text-align:justify;
+    font-family: sans-serif;
+}
+.about-content{
+    width: 80%;
+    height: 300px;
+    position: relative;
+    overflow-y:scroll; 
+    margin-left: 10%;
+    margin-top: 50px;
+}
+.about-content::-webkit-scrollbar {
+    display: none;/*chorme and Safari*/
+    }
+.about-content {
+        -ms-overflow-style: none;  /*IE 10+*/
+        scrollbar-width: none;  /* Firefox*/
+        }
+
+/*Css for parralex effect 1 is started*/
+.parallax{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../images/b2.jpg");
+    height: 56vh; 
+    opacity: 0.95;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 0; 
+    z-index: -3;
+}
+/*Css for Events is started*/
+.events{
+    background: #272727;
+    height: auto; 
+    margin:0px;
+    padding-bottom: 50px;
+}
+.events .events-head h3{
+    text-align:center;
+    color:#fff;
+    font-size:220%;
+    font-family: 'Flamenco', cursive;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-weight:bold;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.events-box{
+    width:100%;
+    height:400px;
+    background: #0ffc99;
+}
+.events-card{
+    position: relative;
+    width:20%;
+    margin-left:4%;
+    height: 400px;
+    background: #0facf5;
+}
+/*Css for Core Memebre is statred*/
+.core-member{
+    background: rgba(18, 18, 19, 0.863);
+    height: auto; 
+    margin:0px;
+    padding-bottom: 60px;
+}
+.core-member h3{
+    text-align:center;
+    color:#fff;
+    font-size:220%;
+    font-family: 'Flamenco', cursive;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-weight:bold;
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+
+
+.tesimonials{
+    margin:50px 10%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    grid-gap: 20px;
+    
+}
+.tesimonials .card{
+    position: relative;
+    width: 350px;
+    margin: 0 auto;
+    background: rgb(112, 109, 109);
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 10px;
+    
+    
+}
+.tesimonials .card .layer{
+    position: absolute;
+    top:0%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(#0facf5,#0ffc99);
+    z-index: -1;
+    transition:0.5;
+    border-radius: 10px;
+}
+.tesimonials .card:hover .layer{
+    top: 0;
+    z-index: 1;
+    
+}
+.tesimonials .card .content{
+    position: relative;
+    z-index: 1;
+}
+.tesimonials .card .content .image{
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #fff;
+}
+.tesimonials .card .content p{
+    padding-top: 30px;
+    font-size: 18px;
+    line-height: 24px;
+    color: #fff;
+    text-align: center;
+
+}
+.tesimonials .card .details h2{
+    padding-top:20px;
+
+}
+
+
+/*css for footer code*/
+.footer-main-div{
+    width: 100%;
+    height: auto;
+    margin:auto;
+    background: #272727;
+    padding: 20px 0px;
+}
+.footer-social-icons{
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+.footer-social-icons ul{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+.footer-social-icons ul li{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0px 10px;
+    border-radius: 100%;
+    background: #35a568;
+}
+#facebook:hover{
+    background: rgb(82, 82, 250);
+}
+#instagram:hover{
+    background:linear-gradient(rgb(202, 4, 113),rgb(216, 216, 71));
+}
+#youtube:hover{
+    background: rgb(180, 24, 13);
+}
+#google:hover{
+    background: rgb(124, 48, 48);
+}
+.footer-social-icons ul li a{
+    color:#272727;
+    font-size: 25px;
+    display: block;
+}
+.footer-social-icons ul li a i{
+    line-height: 50px;
+}
+.footer-menu-one{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-top: 25px;
+}
+.footer-menu-one ul{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+.footer-menu-one ul li {
+    display: inline-block;
+    margin: 0px 20px;
+}
+.footer-menu-one ul li a{
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    outline: none;
+}
+.footer-menu-one ul li a:hover{
+    color: #18f1e7;
+}
+.footer-bottom{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background-color: rgba(18, 18, 19, 0.863);
+    padding:10px 0; 
+}
+.footer-bottom{
+    font-family: Arial;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.footer-bottom p a{
+    color: #fff;
+    text-decoration: none;
+
+}
+.footer-bottom p a:hover{
+    color: #272727;
+}

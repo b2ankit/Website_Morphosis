@@ -1,0 +1,533 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+/*css for header*/
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../images/team.jpg");
+    height: 95vh; 
+    position: relative;
+    opacity: 0.95;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 0; 
+    z-index:10;
+}
+
+.row{
+    max-width: 1550px;
+    margin: 0 auto;
+}
+.clearfix:after{
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height:0px;
+    clear: both; 
+}
+.logo{
+    height: 110px;
+    width: auto;
+    float: left;
+    margin-top: -10px;
+}
+.main-nav{ 
+    float: right;
+    margin-top: 40px;
+}
+.main-nav li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 50px;
+
+}
+.main-nav li a{
+    padding: 5px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    font-weight: 100px;
+}
+.main-nav li a:hover{
+    border-bottom: 2px solid  #bf55ec;
+}
+
+.main-content-header{
+    width: 1300px;
+    position: absolute;
+    top: 70%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+}
+.main-content-header h1{
+    color: #fff;
+    font-size: 240%;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-family: 'Flamenco', cursive;
+    font-weight:bolder;
+}
+.colorchange{
+    animation: colorchanged 6s infinite;
+}
+@keyframes colorchanged{
+    0%{color:rgb(255, 0, 0);}
+    25%{color:#bf55ec;}
+    50%{color: rgb(0, 238, 255);}
+    100%{color:rgb(7, 134, 7);};
+}
+
+.mobile-icon{
+    display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+    .main-content-header{
+        width: 100%;
+        padding: 0 3%;
+        margin-left: 2%;
+    }
+    
+  }
+  @media only screen and (max-width: 998px) {
+    .main-content-header h1{
+        font-size: 200%;
+    }
+    
+  }
+  @media only screen and (max-width: 768px) {
+    .main-content-header h1{
+        font-size: 180%;
+    }
+    .main-nav{
+        display:none;
+    }
+    .mobile-icon{
+        display: block;
+        color: white;
+        float: right;
+        padding-top: 20px;
+        padding-right: 20px;
+    }
+    .main-nav{
+        float: left;
+        padding-top: 20px;
+        padding-left: 20%;
+    }
+    .main-nav li{
+        display: block;
+        margin-top: 10px;
+        margin-left: 0%;
+    }
+    .logo{
+        height: 100px;
+        width: auto;
+        float: left;
+        margin-top: -10px;
+        margin-left: 10px;
+    }
+    header{
+    background-size:cover;
+    background-color: rgb(15, 29, 34);
+    height: 120vh; 
+    }
+  }
+  @media only screen and (max-width: 500px){
+    .main-content-header h1{
+        font-size: 180%;
+        text-align:center;
+        font-weight: bold;
+    }
+
+    .main-content-header{
+       
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    body{
+        width:100%;
+        margin: 0px;
+        padding: 0px;
+    } 
+   
+}
+/*Stricy css is started*/
+.sticky {
+    width: 100%;
+    height: 80px;
+    top: 0px;
+    background-color: rgba(18, 18, 19, 0.863);
+    position: fixed;
+    z-index:1;
+}
+
+#navbar{
+    overflow: hidden;
+}
+/*Css of about is started*/
+.web{
+    background: rgba(18, 18, 19, 0.863);
+    height:auto; 
+    margin:0px;
+    padding-bottom:80px;
+    box-sizing: border-box; 
+}
+.web h3{
+    text-align:center;
+    color:#fff;
+    font-size:220%;
+    font-family: 'Flamenco', cursive;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-weight:bold;
+    padding: 50px 0;
+
+}
+.web-container{
+    width:100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    flex-direction: row;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+ 
+}
+
+.conatiner{
+    width:100%;
+    height: auto;
+    float: left;
+    margin: 0 auto;
+}
+.box{
+    width: 300px;
+    height: 400px;
+    box-shadow: 0px 0px 7px 3px grey;
+    text-align: center;
+    margin: 25px auto;
+    border-radius: 10px;
+} 
+.box h3{
+    color:#fff;
+    font-size: 18px;
+    
+}
+.box-sub{
+    width: 300px;
+    height: 50px;
+    background-color:rgba(0,0,0,0.5);
+    line-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:75%;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 300;
+    color: whitesmoke;
+}
+
+
+.bg1{
+    background:url(../images/1.jpg) no-repeat center;
+    background-size: cover;
+}
+.bg2{
+    background:url(../images/2.jpg) no-repeat center;
+    background-size: cover;
+}.bg3{
+    background:url(../images/3.jpg) no-repeat center;
+    background-size: cover;
+}.bg4{
+    background:url(../images/4.jpg) no-repeat center;
+    background-size: cover;
+}
+.bg5{
+    background:url(../images/5.jpg) no-repeat center;
+    background-size: cover;
+}.bg6{
+    background:url(../images/6.jpg) no-repeat center;
+    background-size: cover;
+}
+.bg7{
+    background:url(../images/7.jpg) no-repeat center;
+    background-size: cover;
+}.bg8{
+    background:url(../images/8.jpg) no-repeat center;
+    background-size: cover;
+}.bg9{
+    background:url(../images/9.jpg) no-repeat center;
+    background-size: cover;
+}
+.bg10{
+    background:url(../images/10.jpg) no-repeat center;
+    background-size: cover;
+}
+
+
+/*Css for Events is started*/
+.core{
+    background: #272727;
+    height: auto; 
+    margin:0px;
+    padding-bottom: 20px;
+    
+}
+.core .core-head h3{
+    text-align:center;
+    color:#fff;
+    font-size:220%;
+    font-family: 'Flamenco', cursive;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-weight:bold;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.core-box{ 
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    flex-direction: row;
+}
+  
+.core .core-box .card-wrapper {
+    width: 400px;
+    height: 500px;
+    position: relative;
+  }
+  
+.core .core-box .card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 320px;
+    height: 400px;
+    transform: translate(-50%, -50%);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    transition: 0.5s;
+  }
+    
+.core .core-box .card-image {
+      position: absolute;
+      top: -20px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+      background-color: #000;
+      transition: .5s;
+    }
+    
+ .core .core-box .card-image:hover img {
+      opacity: 0.4;
+      transition: .5s;
+    }
+  
+.core .core-box .card:hover .card-image {
+    transform: translateY(-70px);
+    transition: all .9s;
+  }
+  
+
+  
+  /**** Personal Details ****/
+  
+  .core .core-box .details {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+    width: 100%;
+    height: 120px;
+    z-index: 1;
+    padding: 10px;
+  }
+  
+  .core .core-box .details h2 {
+      margin: 30px 0;
+      padding: 0;
+      text-align: center;
+    }
+    .core .core-box .details  .job-title {
+          font-size: 1rem;
+          line-height: 2.5rem;
+          color: #333;
+          font-weight: 300;
+      }
+
+/*Css for Events-coordinator*/
+.event{
+    background: rgba(18, 18, 19, 0.863);
+    height: auto; 
+    margin:0px;
+    padding-bottom: 50px;
+    
+}
+.event .event-head h3{
+    text-align:center;
+    color:#fff;
+    font-size:220%;
+    font-family: 'Flamenco', cursive;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-weight:bold;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.event-box{
+    height:auto;
+    margin:50px 0%;
+}
+
+.event .event-box .swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .event .event-box .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 420px;
+    background: #fff;
+    border-radius: 10px;
+  }
+  .event .event-box .imgBx img{
+      width: 300px;
+      height: 350px;
+      border-radius: 10px;
+  }
+  .event .event-box .swiper-slide .details{
+      box-sizing: border-box;
+      padding: 20px;
+  }
+  .event .event-box .swiper-slide .details h3{
+      margin: 0;
+      padding: 0;
+      color: #000;
+      font-size: 20px;
+      text-align: center;
+      line-height: 20px;
+  }
+  .event .event-box .swiper-slide .details h3 span{
+      font-size: 16px;
+      color: #f44336;
+  }
+
+
+
+/*css for footer code*/
+.footer-main-div{
+    width: 100%;
+    height: auto;
+    margin:auto;
+    background: #272727;
+    padding: 20px 0px;
+}
+.footer-social-icons{
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+.footer-social-icons ul{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+.footer-social-icons ul li{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0px 10px;
+    border-radius: 100%;
+    background: #35a568;
+}
+#facebook:hover{
+    background: rgb(82, 82, 250);
+}
+#instagram:hover{
+    background:linear-gradient(rgb(202, 4, 113),rgb(216, 216, 71));
+}
+#youtube:hover{
+    background: rgb(180, 24, 13);
+}
+#google:hover{
+    background: rgb(124, 48, 48);
+}
+.footer-social-icons ul li a{
+    color:#272727;
+    font-size: 25px;
+    display: block;
+}
+.footer-social-icons ul li a i{
+    line-height: 50px;
+}
+.footer-menu-one{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-top: 25px;
+}
+.footer-menu-one ul{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+.footer-menu-one ul li {
+    display: inline-block;
+    margin: 0px 20px;
+}
+.footer-menu-one ul li a{
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    outline: none;
+}
+.footer-menu-one ul li a:hover{
+    color: #18f1e7;
+}
+.footer-bottom{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background-color: rgba(18, 18, 19, 0.863);
+    padding:10px 0; 
+}
+.footer-bottom{
+    font-family: Arial;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.footer-bottom p a{
+    color: #fff;
+    text-decoration: none;
+
+}
+.footer-bottom p a:hover{
+    color: #272727;
+}
