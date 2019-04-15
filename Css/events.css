@@ -1,0 +1,725 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    /*background: #272727;*/
+    background: black;
+}
+section .box1{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../images/team.jpg);
+    background-size:cover; 
+    margin: 50px 0;
+}
+section .box1 .leftBox{
+    width: 50%;
+    height: 100%;
+    float: left;
+    padding: 50px;
+    box-sizing: border-box;
+     
+}
+section .box1 .leftBox .content{
+    color: rgb(196, 189, 189);
+    background:rgba(0,0,0,0.5);
+    padding:40px;
+    transition: 0.5s;
+    border-radius: 15px;
+    
+}
+section .box1 .leftBox .content:hover{
+    background: #e91e63;
+
+}
+section .box1 .leftBox .content h1{
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    font-size: 45px;
+    text-transform: uppercase;
+    font-family: 'Flamenco', cursive;
+    letter-spacing: 3px;
+}
+section .box1 .leftBox .content p{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+}
+section .box1 .events{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    /*background:rgba(0,0,0,0.5);*/
+    background: transparent;
+    float: right;
+    box-sizing: border-box;
+}
+section .box1 .events ul{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+    padding:40px;
+    box-sizing: border-box;
+}
+section .box1 .events ul li{
+    list-style: none;
+  /*  background: #fff;*/
+    box-sizing: border-box;
+    height: 150px;
+    margin: 25px 0;
+    border-radius:15px; 
+}
+section .box1 .events ul li .imgBox{
+    position: relative;
+    padding: 0px;
+    background:rgba(0,0,0,0.5);
+    box-sizing: border-box;
+    width: 20%;
+    height: 100%;
+    float:left;
+    text-align: center;
+    transition: 0.5s;
+    border-radius: 15px;
+}
+section .box1 .events ul li .imgBox img{
+    position: relative;
+    width:120px;
+    height: 120px;
+    margin-top: 10%;
+    border-radius:50%;
+    border: 4px solid white;
+    transition: 0.5s;
+   
+}
+section .box1 .events ul li:hover .imgBox img{
+    transform: scale(1.2);
+    border: 4px solid #e91e63;
+}
+
+section .box1 .events ul li:hover .details{
+    background: #e91e63;
+}
+
+section .box1 .events ul li .details{
+    padding: 20px;
+    background:rgba(0,0,0,0.5);
+    box-sizing: border-box;
+    width: 80%;
+    height: 100%;
+    float: left;
+    cursor: pointer;
+    border-radius: 15px;
+    color: rgb(196, 189, 189);
+
+}
+section .box1 .events ul li .details h3{
+    position: relative;
+    margin: 10px 0 0;
+    padding: 0;
+    font-size: 25px;
+    font-family: 'Flamenco', cursive;
+}
+
+@media (max-width:991px)
+{
+    section .box1{
+        height: 100%;
+        background-position:center; 
+    }
+    section .box1 .leftBox{
+        width: 100%;
+        height: auto;
+        float: none;
+        padding: 20px;
+    }
+    section .box1 .events{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background:transparent;
+        float: none;
+        box-sizing: border-box;
+    }
+    section .box1 .leftBox .content{
+        padding: 20px;
+    }
+    section .box1 .leftBox .content h1{
+        font-size: 30px;
+    }
+    section .box1 .events ul{
+        position: relative;
+        transform: translateY(0px);
+        padding: 0 20px 20px;
+    }
+    section .box1 .events ul li{
+        height: auto;
+    }
+    section .box1 .events ul li .details{
+        height: auto;
+        
+    }
+    section .box1 .events ul li .imgBox img{
+        width: 50px;
+        height:50px;
+    }
+
+    
+}
+@media (max-width:500px)
+{
+    section .box1 .events ul li .details h3{
+        font-size: 18px;
+    }
+    section .box1 .events ul li .details p{
+        font-size: 16px;
+    }
+    section .box1 .leftBox .content h1{
+        font-size: 30px;
+    }
+    section .box1 .leftBox .content p{
+        font-size: 16px;
+    }
+}
+
+
+
+section .box2{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../images/team.jpg);
+    background-size:cover; 
+    margin-bottom: 50px;
+}
+section .box2 .leftBox{
+    width: 50%;
+    height: 100%;
+    float: left;
+    padding: 50px;
+    box-sizing: border-box;
+     
+}
+section .box2 .leftBox .content{
+    color: rgb(196, 189, 189);
+    background:rgba(0,0,0,0.5);
+    padding:40px;
+    transition: 0.5s;
+    border-radius: 15px;
+    
+}
+section .box2 .leftBox .content:hover{
+    background: #e91e63;
+
+}
+section .box2 .leftBox .content h1{
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    font-size: 45px;
+    text-transform: uppercase;
+    font-family: 'Flamenco', cursive;
+    letter-spacing: 3px;
+}
+section .box2 .leftBox .content p{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+}
+section .box2 .events{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    /*background:rgba(0,0,0,0.5);*/
+    background: transparent;
+    float: right;
+    box-sizing: border-box;
+}
+section .box2 .events ul{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+    padding:40px;
+    box-sizing: border-box;
+}
+section .box2 .events ul li{
+    list-style: none;
+  /*  background: #fff;*/
+    box-sizing: border-box;
+    height: 150px;
+    margin: 25px 0;
+    border-radius:15px; 
+}
+section .box2 .events ul li .imgBox{
+    position: relative;
+    padding: 0px;
+    background:rgba(0,0,0,0.5);
+    box-sizing: border-box;
+    width: 20%;
+    height: 100%;
+    float:left;
+    text-align: center;
+    transition: 0.5s;
+    border-radius: 15px;
+}
+section .box2 .events ul li .imgBox img{
+    position: relative;
+    width:120px;
+    height: 120px;
+    margin-top: 10%;
+    border-radius:50%;
+    border: 4px solid white;
+    transition: 0.5s;
+   
+}
+section .box2 .events ul li:hover .imgBox img{
+    transform: scale(1.2);
+    border: 4px solid #e91e63;
+}
+
+section .box2 .events ul li:hover .details{
+    background: #e91e63;
+}
+
+section .box2 .events ul li .details{
+    padding: 20px;
+    background:rgba(0,0,0,0.5);
+    box-sizing: border-box;
+    width: 80%;
+    height: 100%;
+    float: left;
+    cursor: pointer;
+    border-radius: 15px;
+    color: rgb(196, 189, 189);
+
+}
+section .box2 .events ul li .details h3{
+    position: relative;
+    margin: 10px 0 0;
+    padding: 0;
+    font-size: 25px;
+    font-family: 'Flamenco', cursive;
+}
+
+@media (max-width:991px)
+{
+    section .box2{
+        height: 100%;
+        background-position:center; 
+    }
+    section .box2 .leftBox{
+        width: 100%;
+        height: auto;
+        float: none;
+        padding: 20px;
+    }
+    section .box2 .events{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background:transparent;
+        float: none;
+        box-sizing: border-box;
+    }
+    section .box2 .leftBox .content{
+        padding: 20px;
+    }
+    section .box2 .leftBox .content h1{
+        font-size: 30px;
+    }
+    section .box2 .events ul{
+        position: relative;
+        transform: translateY(0px);
+        padding: 0 20px 20px;
+    }
+    section .box2 .events ul li{
+        height: auto;
+    }
+    section .box2 .events ul li .details{
+        height: auto;
+        
+    }
+    section .box2 .events ul li .imgBox img{
+        width: 50px;
+        height:50px;
+    }
+
+    
+}
+@media (max-width:500px)
+{
+    section .box2 .events ul li .details h3{
+        font-size: 18px;
+    }
+    section .box2 .events ul li .details p{
+        font-size: 16px;
+    }
+    section .box2 .leftBox .content h1{
+        font-size: 30px;
+    }
+    section .box2 .leftBox .content p{
+        font-size: 16px;
+    }
+}
+
+section .box3{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../images/team.jpg);
+    background-size:cover; 
+    margin-bottom: 50px;
+}
+section .box3 .leftBox{
+    width: 50%;
+    height: 100%;
+    float: left;
+    padding: 50px;
+    box-sizing: border-box;
+     
+}
+section .box3 .leftBox .content{
+    color: rgb(196, 189, 189);
+    background:rgba(0,0,0,0.5);
+    padding:40px;
+    transition: 0.5s;
+    border-radius: 15px;
+    
+}
+section .box3 .leftBox .content:hover{
+    background: #e91e63;
+
+}
+section .box3 .leftBox .content h1{
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    font-size: 45px;
+    text-transform: uppercase;
+    font-family: 'Flamenco', cursive;
+    letter-spacing: 3px;
+}
+section .box3 .leftBox .content p{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+}
+section .box3 .events{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    /*background:rgba(0,0,0,0.5);*/
+    background: transparent;
+    float: right;
+    box-sizing: border-box;
+}
+section .box3 .events ul{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+    padding:40px;
+    box-sizing: border-box;
+}
+section .box3 .events ul li{
+    list-style: none;
+  /*  background: #fff;*/
+    box-sizing: border-box;
+    height: 150px;
+    margin: 25px 0;
+    border-radius:15px; 
+}
+section .box3 .events ul li .imgBox{
+    position: relative;
+    padding: 0px;
+    background:rgba(0,0,0,0.5);
+    box-sizing: border-box;
+    width: 20%;
+    height: 100%;
+    float:left;
+    text-align: center;
+    transition: 0.5s;
+    border-radius: 15px;
+}
+section .box3 .events ul li .imgBox img{
+    position: relative;
+    width:120px;
+    height: 120px;
+    margin-top: 10%;
+    border-radius:50%;
+    border: 4px solid white;
+    transition: 0.5s;
+   
+}
+section .box3 .events ul li:hover .imgBox img{
+    transform: scale(1.2);
+    border: 4px solid #e91e63;
+}
+
+section .box3 .events ul li:hover .details{
+    background: #e91e63;
+}
+
+section .box3 .events ul li .details{
+    padding: 20px;
+    background:rgba(0,0,0,0.5);
+    box-sizing: border-box;
+    width: 80%;
+    height: 100%;
+    float: left;
+    cursor: pointer;
+    border-radius: 15px;
+    color: rgb(196, 189, 189);
+
+}
+section .box3 .events ul li .details h3{
+    position: relative;
+    margin: 10px 0 0;
+    padding: 0;
+    font-size: 25px;
+    font-family: 'Flamenco', cursive;
+}
+
+@media (max-width:991px)
+{
+    section .box3{
+        height: 100%;
+        background-position:center; 
+    }
+    section .box3 .leftBox{
+        width: 100%;
+        height: auto;
+        float: none;
+        padding: 20px;
+    }
+    section .box3 .events{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background:transparent;
+        float: none;
+        box-sizing: border-box;
+    }
+    section .box3 .leftBox .content{
+        padding: 20px;
+    }
+    section .box3 .leftBox .content h1{
+        font-size: 30px;
+    }
+    section .box3 .events ul{
+        position: relative;
+        transform: translateY(0px);
+        padding: 0 20px 20px;
+    }
+    section .box3 .events ul li{
+        height: auto;
+    }
+    section .box3 .events ul li .details{
+        height: auto;
+        
+    }
+    section .box3 .events ul li .imgBox img{
+        width: 50px;
+        height:50px;
+    }
+
+    
+}
+@media (max-width:500px)
+{
+    section .box3 .events ul li .details h3{
+        font-size: 18px;
+    }
+    section .box3 .events ul li .details p{
+        font-size: 16px;
+    }
+    section .box3 .leftBox .content h1{
+        font-size: 30px;
+    }
+    section .box3 .leftBox .content p{
+        font-size: 16px;
+    }
+}
+
+section .box4{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../images/team.jpg);
+    background-size:cover; 
+    margin-bottom: 50px;
+}
+section .box4 .leftBox{
+    width: 50%;
+    height: 100%;
+    float: left;
+    padding: 50px;
+    box-sizing: border-box;
+     
+}
+section .box4 .leftBox .content{
+    color: rgb(196, 189, 189);
+    background:rgba(0,0,0,0.5);
+    padding:40px;
+    transition: 0.5s;
+    border-radius: 15px;
+    
+}
+section .box4 .leftBox .content:hover{
+    background: #e91e63;
+
+}
+section .box4 .leftBox .content h1{
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    font-size: 45px;
+    text-transform: uppercase;
+    font-family: 'Flamenco', cursive;
+    letter-spacing: 3px;
+}
+section .box4 .leftBox .content p{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+}
+section .box4 .events{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    /*background:rgba(0,0,0,0.5);*/
+    background: transparent;
+    float: right;
+    box-sizing: border-box;
+}
+section .box4 .events ul{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+    padding:40px;
+    box-sizing: border-box;
+}
+section .box4 .events ul li{
+    list-style: none;
+  /*  background: #fff;*/
+    box-sizing: border-box;
+    height: 150px;
+    margin: 25px 0;
+    border-radius:15px; 
+}
+section .box4 .events ul li .imgBox{
+    position: relative;
+    padding: 0px;
+    background:rgba(0,0,0,0.5);
+    box-sizing: border-box;
+    width: 20%;
+    height: 100%;
+    float:left;
+    text-align: center;
+    transition: 0.5s;
+    border-radius: 15px;
+}
+section .box4 .events ul li .imgBox img{
+    position: relative;
+    width:120px;
+    height: 120px;
+    margin-top: 10%;
+    border-radius:50%;
+    border: 4px solid white;
+    transition: 0.5s;
+   
+}
+section .box4 .events ul li:hover .imgBox img{
+    transform: scale(1.2);
+    border: 4px solid #e91e63;
+}
+
+
+section .box4 .events ul li:hover .details{
+    background: #e91e63;
+}
+
+section .box4 .events ul li .details{
+    padding: 20px;
+    background:rgba(0,0,0,0.5);
+    box-sizing: border-box;
+    width: 80%;
+    height: 100%;
+    float: left;
+    cursor: pointer;
+   border-radius: 15px;
+    color: rgb(196, 189, 189);
+
+}
+section .box4 .events ul li .details h3{
+    position: relative;
+    margin: 10px 0 0;
+    padding: 0;
+    font-size: 25px;
+    font-family: 'Flamenco', cursive;
+}
+
+@media (max-width:991px)
+{
+    section .box4{
+        height: 100%;
+        background-position:center; 
+    }
+    section .box4 .leftBox{
+        width: 100%;
+        height: auto;
+        float: none;
+        padding: 20px;
+    }
+    section .box4 .events{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background:transparent;
+        float: none;
+        box-sizing: border-box;
+    }
+    section .box4 .leftBox .content{
+        padding: 20px;
+    }
+    section .box4 .leftBox .content h1{
+        font-size: 30px;
+    }
+    section .box4 .events ul{
+        position: relative;
+        transform: translateY(0px);
+        padding: 0 20px 20px;
+    }
+    section .box4 .events ul li{
+        height: auto;
+    }
+    section .box4 .events ul li .details{
+        height: auto;
+        
+    }
+    section .box4 .events ul li .imgBox img{
+        width: 50px;
+        height:50px;
+    }
+
+    
+}
+@media (max-width:500px)
+{
+    section .box4 .events ul li .details h3{
+        font-size: 18px;
+    }
+    section .box4 .events ul li .details p{
+        font-size: 16px;
+    }
+    section .box4 .leftBox .content h1{
+        font-size: 30px;
+    }
+    section .box4 .leftBox .content p{
+        font-size: 16px;
+    }
+}
