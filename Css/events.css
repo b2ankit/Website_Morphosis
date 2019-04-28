@@ -1030,7 +1030,7 @@ section .box4 .events ul li .details h3{
 }
 .footer-menu-one ul li {
     display: inline-block;
-    margin: 0px 20px;
+    margin: 10px 20px;
 }
 .footer-menu-one ul li a{
     font-family: Arial;
