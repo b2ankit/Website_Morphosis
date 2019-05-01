@@ -5,7 +5,7 @@
 }
 /*css for header*/
 header{
-    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../images/team.jpg");
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("../images/team.jpg");
     height: 95vh; 
     position: relative;
     opacity: 0.95;
@@ -59,8 +59,8 @@ header{
 .main-content-header{
     width: 1300px;
     position: absolute;
-    top: 70%;
-    left: 40%;
+    top: 55%;
+    left: 50%;
     transform: translate(-50%,-50%);
 }
 .main-content-header h1{
@@ -93,7 +93,7 @@ header{
     }
     
   }
-  @media only screen and (max-width: 998px) {
+  @media only screen and (max-width: 1100px) {
     .main-content-header h1{
         font-size: 200%;
     }
@@ -153,8 +153,8 @@ header{
         width:100%;
         margin: 0px;
         padding: 0px;
-    } 
-   
+    }
+          
 }
 /*Stricy css is started*/
 .sticky {
@@ -169,6 +169,8 @@ header{
 #navbar{
     overflow: hidden;
 }
+
+
 /*Css of about is started*/
 .web{
     background: rgba(18, 18, 19, 0.863);
@@ -180,7 +182,7 @@ header{
 .web h3{
     text-align:center;
     color:#fff;
-    font-size:220%;
+    font-size:200%;
     font-family: 'Flamenco', cursive;
     letter-spacing: 3px;
     text-transform: uppercase;
